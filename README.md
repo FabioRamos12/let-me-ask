@@ -1,46 +1,108 @@
-# Getting Started with Create React App
+<!-- <h1 align="center">
+    <img alt="Icon" title="#Icon" src=".github/icon.png"/>
+    <span align="center">Podcastr</span>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <a href="#headphones-about">About</a> •
+    <a href="#computer-layout">Layout</a> •
+    <a href="#rocket-getting-started">Getting Started</a> • 
+    <a href="#microscope-technologies">Technologies</a> • 
+    <a href="#pencil2-author">Author</a> • 
+    <a href="#pencil-license">License</a>
+</p>
 
-## Available Scripts
+## :headphones: About
 
-In the project directory, you can run:
+Podcastr is a platform for podcast broadcasting
 
-### `yarn start`
+This is a project developed during the **[Next Level Week](https://nextlevelweek.com/)**, presented by **[@Rocketseat](https://github.com/Rocketseat)**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :computer: Layout
 
-### `yarn test`
+You can view the project layout through the links below:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Layout Web](https://www.figma.com/file/UwFEntsHpHYJlHNQAQr4gA/Podcastr?node-id=160%3A2761) 
 
-### `yarn build`
+Remembering that you need to have a [Figma](http://figma.com/) account to access it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### :globe_with_meridians: Web
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+  <img alt="Podcastr" title="#Podcastr" src=".github/web-layout-1.png" width="400px">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <img alt="Podcastr" title="#Podcastr" src=".github/web-layout-2.png" width="400px">
+</p>
 
-### `yarn eject`
+### :iphone: Web Mobile
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Podcastr" title="#Podcastr" src=".github/web-mobile-layout-1.png" width="400px" height="410px">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <img alt="Podcastr" title="#Podcastr" src=".github/web-mobile-layout-2.png" width="400px" height="410px">
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### :bulb: Dark Mode
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Podcastr" title="#Podcastr" src=".github/dark-mode-web.png" width="800px">
+</p>
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :rocket: Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Requirements
+
+- You need to install both [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) to run this project.
+
+**Clone the project and access the folder**
+
+```bash
+$ git clone https://github.com/FabioRamos12/podcastr.git && cd podcastr
+```
+
+**Follow the steps below**
+
+```bash
+# Install the dependencies
+$ yarn
+
+# Run the backend fake server
+$ yarn server
+
+# Run the web server
+$ yarn dev
+```
+
+The app will be available for access on your browser at `http://localhost:3000`
+
+---
+
+## :microscope: Technologies
+
+This project was developed using the following technologies:
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+
+---
+
+## :pencil2: Author
+
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/34969286?s=400&u=15eb378fc8be34ee27c691a916634fe9a7a999a0&v=4" width="100px;" alt="Fabio Ramos"/>
+ <span>Fabio Ramos</span>
+
+[![Linkedin Badge](https://img.shields.io/badge/-FabioRamos-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabioalvesramos/)](https://www.linkedin.com/in/fabioalvesramos/) 
+[![Gmail Badge](https://img.shields.io/badge/-fabioalvesramos12@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:fabioalvesramos12@gmail.com)](mailto:fabioalvesramos12@gmail.com)
+
+---
+
+## :pencil: License
+
+This project is under the license [MIT](./LICENSE).
+
+--- -->
