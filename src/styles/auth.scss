@@ -210,7 +210,8 @@
 
             form {
                 Button {
-                    background: linear-gradient(139.44deg, #485BFF 0%, #FF59F8 96.19%);
+                    /* background: linear-gradient(139.44deg, #485BFF 0%, #FF59F8 96.19%); */
+                    background: #FF59F8;
                 }
             }
 
@@ -220,12 +221,16 @@
             }
 
             a {
-                color: #000;        
+                color: #FF59F8;        
             }
         }
 
         .create-room {
             margin-top: 0px;
-        }        
+        }  
+        
+        .separador {
+            color: #E2E2E2;
+        }
     }
 }
