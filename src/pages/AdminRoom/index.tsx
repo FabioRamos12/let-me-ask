@@ -1,4 +1,3 @@
-import { FormEvent, useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 
 import './styles.scss'
@@ -24,11 +23,12 @@ export function AdminRoom() {
     const { questions, title } = useRoom(roomId)
 
     async function handleEndRoom() {
-        database.ref(`rooms/${roomId}`).update({
-            endedAt: new Date()
-        })
-
-        history.push('/')
+        if (window.confirm('Tem certeza que você deseja encerrar esta sala ?')) {
+            database.ref(`rooms/${roomId}`).update({
+                endedAt: new Date()
+            })
+            history.push('/')
+        }
     }
 
     async function handleDeleteQuestion(questionId: string) {
