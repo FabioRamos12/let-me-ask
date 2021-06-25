@@ -1,6 +1,5 @@
-<!-- <h1 align="center">
-    <img alt="Icon" title="#Icon" src=".github/icon.png"/>
-    <span align="center">Podcastr</span>
+<h1 align="center">
+    <img alt="Icon" title="#Icon" src=".github/icon.svg"/>
 </h1>
 
 <p align="center">
@@ -14,7 +13,8 @@
 
 ## :headphones: About
 
-Podcastr is a platform for podcast broadcasting
+Letmeask is perfect for content creators to be able to create Q&A rooms with their audience, in a very organized and democratic way.
+
 
 This is a project developed during the **[Next Level Week](https://nextlevelweek.com/)**, presented by **[@Rocketseat](https://github.com/Rocketseat)**.
 
@@ -24,7 +24,7 @@ This is a project developed during the **[Next Level Week](https://nextlevelweek
 
 You can view the project layout through the links below:
 
-- [Layout Web](https://www.figma.com/file/UwFEntsHpHYJlHNQAQr4gA/Podcastr?node-id=160%3A2761) 
+- [Layout Web](https://www.figma.com/file/hFMveMlPTt0xYVcRZa4Skx/Letmeask-(Copy)?node-id=0%3A1) 
 
 Remembering that you need to have a [Figma](http://figma.com/) account to access it.
 
@@ -61,7 +61,7 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/FabioRamos12/podcastr.git && cd podcastr
+$ git clone https://github.com/FabioRamos12/let-me-ask.git && cd let-me-ask
 ```
 
 **Follow the steps below**
@@ -70,14 +70,14 @@ $ git clone https://github.com/FabioRamos12/podcastr.git && cd podcastr
 # Install the dependencies
 $ yarn
 
-# Run the backend fake server
-$ yarn server
-
-# Run the web server
-$ yarn dev
+# Run the project
+$ yarn start
 ```
 
 The app will be available for access on your browser at `http://localhost:3000`
+
+Remembering that it will be necessary to create an account in [Firebase](https://firebase.google.com/) and a project to make the Realtime Database available.
+
 
 ---
 
@@ -85,8 +85,8 @@ The app will be available for access on your browser at `http://localhost:3000`
 
 This project was developed using the following technologies:
 
-- [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org)
+- [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ---
@@ -105,4 +105,4 @@ This project was developed using the following technologies:
 
 This project is under the license [MIT](./LICENSE).
 
---- -->
+---
