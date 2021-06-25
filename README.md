@@ -11,6 +11,10 @@
     <a href="#pencil-license">License</a>
 </p>
 
+<h1 align="center">
+    <img alt="Letmeask" src=".github/cover.svg" />
+</h1
+
 ## :headphones: About
 
 Letmeask is perfect for content creators to be able to create Q&A rooms with their audience, in a very organized and democratic way.
