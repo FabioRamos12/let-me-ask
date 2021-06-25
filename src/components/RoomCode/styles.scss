@@ -3,12 +3,12 @@
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
-    border: 1px solid #835afd;
+    border: 1px solid #E26C00;
     cursor: pointer;
     display: flex;
 
     div {
-        background: #835afd;
+        background: #E26C00;
         padding: 0 12px;
         height: 100%;
         display: flex;
@@ -23,4 +23,11 @@
         font-size: 14px;
         font-weight: 500;
     }
+}
+
+.dark-mode {
+    .room-code {
+        background: #E26C00;
+        color: #fff;
+    }    
 }

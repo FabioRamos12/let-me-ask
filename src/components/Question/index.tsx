@@ -29,15 +29,16 @@ export function Question({
                 { highlighted: isHighlighted && !isAnswered },
             )}
         >
-            <p>{content}</p>
-            <footer>
+            <div className="question-header">
                 <div className="user-info">
                     <img src={author.avatar} alt={author.name} />
                     <span>{author.name}</span>
                 </div>
 
                 <div>{children}</div>
-            </footer>
+            </div>
+            <p>{content}</p>
+
         </div>
     )
 }

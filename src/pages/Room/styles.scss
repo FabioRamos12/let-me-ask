@@ -1,7 +1,72 @@
 #page-room {
+    min-height: 100vh;
+
     header {
         padding: 24px;
         border-bottom: 1px solid #e2e2e2;
+
+        .darkModeButtonContainer {
+            margin-left: 10px;
+        
+            .switch {
+                position: absolute;
+                margin-left: -9999px;
+                visibility: hidden;
+            }
+              
+            .switch + label {
+                display: block;
+                position: relative;
+                cursor: pointer;
+                outline: none;
+                user-select: none;
+            }
+            
+            .switchShadow + label {
+                padding: 2px;
+                width: 60px;
+                height: 30px;
+                border-radius: 60px;
+                background: #E26C00 url('../../assets/images/moon.svg') no-repeat;
+                background-size: 40%;
+                background-position: 34px;
+            }
+            
+            .switchShadow + label:before,
+            .switchShadow + label:after {
+              display: block;
+              position: absolute;
+              top: 1px;
+              left: 1px;
+              bottom: 1px;
+              content: '';
+            }
+            
+            .switchShadow + label:before {
+              right: 1px;
+              
+              border-radius: 60px;
+              transition: all 0.2s;
+            }
+            
+            .switchShadow + label:after {
+              width: 30px;
+              background-color: #E7AD00;
+              border-radius: 100%;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+              transition: all 0.4s;
+            }
+            
+            .switchShadow:checked + label:before {
+                background: #E26C00 url('../../assets/images/sun.svg') no-repeat;
+                background-size: 40%;
+                background-position: 4px;
+            }
+            
+            .switchShadow:checked + label:after {
+                transform: translateX(30px);
+            }
+        }
 
         .content {
             max-width: 1120px;
@@ -17,6 +82,7 @@
 
             > div {
                 display: flex;
+                align-items: center;
                 gap: 16px;                
                 
                 button {
@@ -29,7 +95,7 @@
     main {
         max-width: 800px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 15px;
 
         .room-title {
             margin: 32px 0 24px;
@@ -44,7 +110,7 @@
 
             span {
                 margin-left: 16px;
-                background: #e559f9;
+                background: #E7AD00;
                 border-radius: 9999px;
                 padding: 8px 16px;
                 color: #fff;
@@ -63,6 +129,7 @@
                 box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
                 resize: vertical;
                 min-height: 130px;
+                outline: none;
             }
 
             .form-footer {
@@ -97,7 +164,7 @@
                     button {
                         background: transparent;
                         border: 0;
-                        color: #835afd;
+                        color: #E26C00;
                         text-decoration: underline;
                         font-size: 14px;
                         font-weight: 500;
@@ -129,7 +196,7 @@
         }
 
         main {
-        .room-title {
+            .room-title {
             margin: 24px 0 24px;
             flex-direction: column;
             gap: 12px;
@@ -138,7 +205,38 @@
                 font-size: 18px;
                 text-align: center;
                 }
-            }
+            }           
+        }
+    }    
+}
+
+
+.dark-mode {
+    background: #242424;
+
+    header {
+        background: #303030;
+        border-bottom-color: #3b3b3b !important;
+
+        .content > img {
+            content: url('../../assets/images/logo-white.svg');
+        }
+    }
+
+    main {        
+        .room-title {
+            h1 {
+                color: #fefefe !important;
+            }            
+        }
+
+        form .form-footer span {
+            color: #e2e2e2 !important;
+        }
+
+        form textarea {
+            background: #181818 !important;
+            color: #fefefe;
         }
     }    
 }

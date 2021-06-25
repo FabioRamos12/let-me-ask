@@ -19,6 +19,7 @@ export function Room() {
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('')
     const roomId = params.id
+    const [darkMode, setDarkMode] = useState(false)
 
     const { questions, title } = useRoom(roomId)
 
@@ -58,12 +59,23 @@ export function Room() {
         }
     }
 
+    function darkModeButton() {
+        setDarkMode(!darkMode)
+    }
+
     return (
-        <div id="page-room">
+        <div id="page-room" className={`${darkMode ? 'dark-mode' : ''}`}>
             <header>
                 <div className="content">
                     <img src={logoImg} alt="Logo" />
-                    <RoomCode code={roomId} />
+                    <div>
+                        <div className="darkModeButtonContainer">
+                            <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={darkModeButton} />
+                            <label htmlFor="dark-mode"></label>
+                        </div>
+                        <RoomCode code={roomId} />
+                    </div>
+
                 </div>
             </header>
 

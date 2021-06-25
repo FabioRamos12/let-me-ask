@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 
 import illustrationImg from '../../assets/images/illustration.svg'
 import logoImg from '../../assets/images/logo.svg'
-import WhiteLogoImg from '../../assets/images/logo-white.svg'
+import BlueLogoImg from '../../assets/images/logo-yellow.svg'
 import googleIconImg from '../../assets/images/google-icon.svg'
 
 import '../../styles/auth.scss'
@@ -49,7 +49,7 @@ export function Home() {
 
     return (
         <div id="page-auth">
-            <img src={WhiteLogoImg} alt="Logo" />
+            <img src={BlueLogoImg} alt="Logo" />
             <aside>
                 <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
                 <strong>Crie salas de Q&amp;A ao vivo</strong>

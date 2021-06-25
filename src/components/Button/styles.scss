@@ -2,7 +2,7 @@
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #835afd;
+    background: #E26C00;
     color: #fff;
     padding: 0 32px;
 
@@ -21,8 +21,13 @@
 
     &.outlined {
         background: #fff;
-        border: 1px solid red;
-        color: red;
+        border: 1px solid #D73754;
+        color: #D73754;
+
+        &:hover {
+            background: #D73754;
+            color: #fff;
+        }
     }
 
     &:not(:disabled):hover {
@@ -41,6 +46,15 @@
         &.outlined {
             content: url('../../assets/images/close.svg');
             background: #FF0000;
+        }
+    }
+}
+
+.dark-mode {
+    .button {
+        &.outlined {  
+            background: #D73754;
+            color: #fff;            
         }
     }
 }

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 
 import './styles.scss'
@@ -21,6 +22,7 @@ export function AdminRoom() {
     const history = useHistory()
     const params = useParams<RoomParams>();
     const roomId = params.id
+    const [darkMode, setDarkMode] = useState(false)
 
     const { questions, title } = useRoom(roomId)
 
@@ -44,18 +46,27 @@ export function AdminRoom() {
             isAnswered: true,
         })
     }
+
     async function handleHighlightQuestion(questionId: string) {
         await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
             isHighlighted: true,
         })
     }
 
+    function darkModeButton() {
+        setDarkMode(!darkMode)
+    }
+
     return (
-        <div id="page-room">
+        <div id="page-room" className={`${darkMode ? 'dark-mode' : ''}`}>
             <header>
                 <div className="content">
                     <img src={logoImg} alt="Logo" />
                     <div>
+                        <div className="darkModeButtonContainer">
+                            <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={darkModeButton} />
+                            <label htmlFor="dark-mode"></label>
+                        </div>
                         <RoomCode code={roomId} />
                         <Button
                             isOutlined

@@ -11,7 +11,7 @@
     aside {
         flex: 6;
 
-        background: #835afd;
+        background: #E26C00;
         color: #fff;
 
         display: flex;
@@ -92,7 +92,7 @@
         }
 
         a {
-            color: #e559f9;
+            color: #E7AD00;
             margin-left: 5px;            
         }
     }
@@ -155,7 +155,8 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
-        background: #835afd;
+        background: #E26C00;
+        height: 100%;
 
         > img {
             max-width: 100px;
@@ -212,7 +213,7 @@
             form {
                 Button {
                     /* background: linear-gradient(139.44deg, #485BFF 0%, #FF59F8 96.19%); */
-                    background: #FF59F8;
+                    background: #E7AD00;
                 }
             }
 
@@ -222,7 +223,7 @@
             }
 
             a {
-                color: #FF59F8;        
+                color: #E7AD00;        
             }
         }
 
@@ -233,11 +234,5 @@
         .separador {
             color: #E2E2E2;
         }
-    }
-}
-
-@media(max-width: 768px) {
-    #page-auth {
-        background: #835afd;
     }
 }
