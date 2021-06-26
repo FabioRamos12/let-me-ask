@@ -52,17 +52,13 @@ export function AdminRoom() {
     }
 
     return (
-        <div id="page-room" className={`${darkMode ? 'dark-mode' : ''}`}>
+        <div id="page-room" className={`${darkMode ? 'dark-mode' : ''} ${questions.length > 0 ? '' : 'no-quesions'}`}>
             <header>
                 <div className="content">
                     <Link to='/'>
                         <img src={logoImg} alt="Logo" />
                     </Link>
                     <div>
-                        <div className="darkModeButtonContainer">
-                            <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={() => setDarkMode(!darkMode)} />
-                            <label htmlFor="dark-mode"></label>
-                        </div>
                         <RoomCode code={roomId} />
                         <Button
                             isOutlined
@@ -74,6 +70,10 @@ export function AdminRoom() {
             </header>
 
             <main className="content">
+                <div className="darkModeButtonContainer">
+                    <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={() => setDarkMode(!darkMode)} />
+                    <label htmlFor="dark-mode"></label>
+                </div>
                 <div className="room-title">
                     <h1>Sala {title}</h1>
                     {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}

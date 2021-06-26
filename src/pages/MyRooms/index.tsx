@@ -7,14 +7,11 @@ import { useRooms } from '../../hooks/useRooms'
 import { MyRoom } from '../../components/MyRoom'
 
 export function MyRooms() {
-    /*  const { user } = useAuth()
-     const params = useParams<RoomParams>();
-     const [newQuestion, setNewQuestion] = useState('') */
     const [darkMode, setDarkMode] = useState(false)
-    const { authorRooms } = useRooms()
+    const { authorRoom } = useRooms()
 
-    function print() {
-        console.log(authorRooms)
+    function tet() {
+        console.log(authorRoom)
     }
 
     return (
@@ -36,16 +33,15 @@ export function MyRooms() {
                     <h1>Minhas Salas</h1>
                 </div>
 
-                <button onClick={print}>console</button>
-
                 <div className="room-cards">
-                    {authorRooms.map((room: any, key: number) => {
+                    {authorRoom.map((room: any) => {
                         return (
                             <MyRoom
-                                key={key}
-                                roomTitle={room.authorRoom.title}
+                                key={room.roomId}
+                                title={room.title}
                                 roomId={room.roomId}
                                 questionLength={room.questionLength}
+                                status={room.status}
                             />
                         )
                     })}

@@ -66,10 +66,10 @@ export function Room() {
                     <Link to='/'>
                         <img src={logoImg} alt="Logo" />
                     </Link>
+
                     <div>
                         <RoomCode code={roomId} />
                     </div>
-
                 </div>
             </header>
 

@@ -37,23 +37,29 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 ### :globe_with_meridians: Web
 
 <p align="center">
-  <img alt="Podcastr" title="#Podcastr" src=".github/web-layout-1.png" width="400px">
+  <img alt="Podcastr" title="#Podcastr" src=".github/web-1.png" width="400px">
 
-  <img alt="Podcastr" title="#Podcastr" src=".github/web-layout-2.png" width="400px">
+  <img alt="Podcastr" title="#Podcastr" src=".github/web-4.png" width="400px">
 </p>
 
 ### :iphone: Web Mobile
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Podcastr" title="#Podcastr" src=".github/web-mobile-layout-1.png" width="400px" height="410px">
+  <img alt="Podcastr" title="#Podcastr" src=".github/mobile-1.png" width="200px" height="410px">
 
-  <img alt="Podcastr" title="#Podcastr" src=".github/web-mobile-layout-2.png" width="400px" height="410px">
+  <img alt="Podcastr" title="#Podcastr" src=".github/mobile-3.png" width="200px" height="410px">
 </p>
 
 ### :bulb: Dark Mode
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Podcastr" title="#Podcastr" src=".github/dark-mode-web.png" width="800px">
+  <img alt="Podcastr" title="#Podcastr" src=".github/github/web-3.png" width="800px">
+  <img alt="Podcastr" title="#Podcastr" src=".github/github/web-5.png" width="800px">
+</p>
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Podcastr" title="#Podcastr" src=".github/mobile-2.png" width="800px">
+  <img alt="Podcastr" title="#Podcastr" src=".github/mobile-4.png" width="800px">
 </p>
 
 ---
