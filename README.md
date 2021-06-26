@@ -37,9 +37,9 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 ### :globe_with_meridians: Web
 
 <p align="center">
-  <img alt="Letmeask" title="#Letmeask" src=".github/web-1.png" width="400px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/web-1.png" width="400px" height="200px">
 
-  <img alt="Letmeask" title="#Letmeask" src=".github/web-4.png" width="400px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/web-4.png" width="400px" height="200px">
 </p>
 
 ### :iphone: Web Mobile
@@ -53,13 +53,13 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 ### :bulb: Dark Mode
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Letmeask" title="#Letmeask" src=".github/github/web-3.png" width="800px">
-  <img alt="Letmeask" title="#Letmeask" src=".github/github/web-5.png" width="800px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/github/web-3.png" width="400px" height="200px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/github/web-5.png" width="400px" height="200px">
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Letmeask" title="#Letmeask" src=".github/mobile-2.png" width="800px">
-  <img alt="Letmeask" title="#Letmeask" src=".github/mobile-4.png" width="800px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/mobile-2.png" width="200px" height="410px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/mobile-4.png" width="200px" height="410px">
 </p>
 
 ---
