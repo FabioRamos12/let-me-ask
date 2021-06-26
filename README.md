@@ -53,8 +53,8 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 ### :bulb: Dark Mode
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Letmeask" title="#Letmeask" src=".github/github/web-3.png" width="400px" height="200px">
-  <img alt="Letmeask" title="#Letmeask" src=".github/github/web-5.png" width="400px" height="200px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/web-3.png" width="400px" height="200px">
+  <img alt="Letmeask" title="#Letmeask" src=".github/web-5.png" width="400px" height="200px">
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
