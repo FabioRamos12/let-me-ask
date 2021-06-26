@@ -32,6 +32,10 @@ export function NewRoom() {
         history.push(`/rooms/${firebaseRoom.key}`)
     }
 
+    async function navegateToMyRooms() {
+        history.push(`/myrooms/${user?.id}`)
+    }
+
     return (
         <div id="page-auth">
             <img src={BlueLogoImg} alt="Logo" />
@@ -57,6 +61,9 @@ export function NewRoom() {
                             Criar sala
                         </Button>
                     </form>
+                    <Button className="button myrooms-button" onClick={navegateToMyRooms}>
+                        Minhas salas
+                    </Button>
                     <p>
                         Quer entrar em uma sala existente?
                         <Link to="/">clique aqui</Link>

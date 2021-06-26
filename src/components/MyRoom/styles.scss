@@ -1,0 +1,34 @@
+.room-card {
+    text-decoration: none;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+
+    header {
+        background: #E26C00;
+        display: flex;
+        justify-content: center;
+        word-wrap: break-word;
+
+        h2 {
+            font-size: 18px;
+            color: #f2f2f2;
+        }
+    }
+
+    p {
+        text-align: center;
+        padding: 24px;
+        color: #29292e;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    div {
+        display: flex;
+        justify-content: flex-end;
+        padding: 12px;
+
+        span {
+            color: #29292e;
+        }   
+    }
+}

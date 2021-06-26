@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 import './styles.scss'
 import logoImg from '../../assets/images/logo.svg'
@@ -59,20 +59,14 @@ export function Room() {
         }
     }
 
-    function darkModeButton() {
-        setDarkMode(!darkMode)
-    }
-
     return (
         <div id="page-room" className={`${darkMode ? 'dark-mode' : ''}`}>
             <header>
                 <div className="content">
-                    <img src={logoImg} alt="Logo" />
+                    <Link to='/'>
+                        <img src={logoImg} alt="Logo" />
+                    </Link>
                     <div>
-                        <div className="darkModeButtonContainer">
-                            <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={darkModeButton} />
-                            <label htmlFor="dark-mode"></label>
-                        </div>
                         <RoomCode code={roomId} />
                     </div>
 
@@ -80,6 +74,10 @@ export function Room() {
             </header>
 
             <main className="content">
+                <div className="darkModeButtonContainer">
+                    <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={() => setDarkMode(!darkMode)} />
+                    <label htmlFor="dark-mode"></label>
+                </div>
                 <div className="room-title">
                     <h1>Sala {title}</h1>
                     {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}

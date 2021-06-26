@@ -4,7 +4,7 @@
     font-weight: 500;
     background: #E26C00;
     color: #fff;
-    padding: 0 32px;
+    padding: 0 12px;
 
     display: flex;
     justify-content: center;
@@ -38,6 +38,11 @@
         opacity: 0.6;
         cursor: not-allowed;
     }
+}
+
+.myrooms-button {
+    margin-top: 16px;
+    background: #E7AD00;
 }
 
 @media(max-width: 768px) {

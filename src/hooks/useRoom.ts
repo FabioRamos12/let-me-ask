@@ -39,6 +39,7 @@ export function useRoom(roomId: string) {
         roomRef.on('value', room => {
             const databaseRoom = room.val()
             const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {}
+            console.log('dsiajdi', databaseRoom)
 
             const parsedQuestions = Object.entries(firebaseQuestions).map(([key, value]) => {
                 return {
@@ -60,5 +61,26 @@ export function useRoom(roomId: string) {
             roomRef.off('value')
         }
     }, [roomId, user?.id])
+
+    useEffect(() => {
+        const roomRef = database.ref(`rooms`)
+
+
+
+        roomRef.on('value', room => {
+            const databaseRoom = room.val()
+            console.log('dsiajdi', databaseRoom)
+
+            const rooms = Object.entries(databaseRoom)
+            console.log('rooms', rooms)
+        })
+
+
+
+        return () => {
+            roomRef.off('value')
+        }
+    }, [roomId, user?.id])
+
     return { questions, title }
 }

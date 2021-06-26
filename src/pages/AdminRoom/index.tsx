@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory, useParams, Link } from 'react-router-dom'
 
 import './styles.scss'
 import logoImg from '../../assets/images/logo.svg'
@@ -9,7 +9,6 @@ import answerImg from '../../assets/images/answer.svg'
 import { Button } from '../../components/Button'
 import { Question } from '../../components/Question'
 import { RoomCode } from '../../components/RoomCode'
-import { useAuth } from '../../hooks/useAuth'
 import { database } from '../../services/firebase'
 import { useRoom } from '../../hooks/useRoom'
 
@@ -18,7 +17,6 @@ type RoomParams = {
 }
 
 export function AdminRoom() {
-    const { user } = useAuth()
     const history = useHistory()
     const params = useParams<RoomParams>();
     const roomId = params.id
@@ -53,18 +51,16 @@ export function AdminRoom() {
         })
     }
 
-    function darkModeButton() {
-        setDarkMode(!darkMode)
-    }
-
     return (
         <div id="page-room" className={`${darkMode ? 'dark-mode' : ''}`}>
             <header>
                 <div className="content">
-                    <img src={logoImg} alt="Logo" />
+                    <Link to='/'>
+                        <img src={logoImg} alt="Logo" />
+                    </Link>
                     <div>
                         <div className="darkModeButtonContainer">
-                            <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={darkModeButton} />
+                            <input className="switch switchShadow" type="checkbox" id="dark-mode" onClick={() => setDarkMode(!darkMode)} />
                             <label htmlFor="dark-mode"></label>
                         </div>
                         <RoomCode code={roomId} />

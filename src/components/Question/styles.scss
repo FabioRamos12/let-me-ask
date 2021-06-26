@@ -23,7 +23,7 @@
 
     p {
         color: #29292e;
-        padding: 24px 0 24px 48px;
+        padding: 24px 48px;
     }
 
     .question-header {
@@ -77,6 +77,12 @@
                 }
             }
         }
+    }
+}
+
+@media(max-width: 768px) {
+    .question p {
+        padding: 24px 12px ;
     }
 }
 
