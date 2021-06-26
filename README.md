@@ -11,11 +11,9 @@
     <a href="#pencil-license">License</a>
 </p>
 
-<br>
-
 <h1 align="center">
     <img alt="Letmeask" src=".github/cover.svg" />
-</h1
+</h1>
 
 ## :headphones: About
 
