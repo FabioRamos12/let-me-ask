@@ -88,6 +88,8 @@ The app will be available for access on your browser at `http://localhost:3000`
 
 Remembering that it will be necessary to create an account in [Firebase](https://firebase.google.com/) and a project to make the Realtime Database available.
 
+Don't forget to copy and paste the Firebase configuration containing your app's keys and identifiers into the .env.local file.
+
 ```bash
 #Copy and paste this code on Rules(Regras) table
 {
