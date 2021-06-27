@@ -91,7 +91,7 @@ Remembering that it will be necessary to create an account in [Firebase](https:/
 Don't forget to copy and paste the Firebase configuration containing your app's keys and identifiers into the .env.local file.
 
 ```bash
-#Copy and paste this code on Rules(Regras) table
+#Copy and paste this code on Rules(Regras) tab
 {
   "rules": {
     "rooms": {
